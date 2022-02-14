@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Triangulo">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_marginLeft="20sp"
+        android:id="@+id/btnVolver"
+        android:layout_marginTop="20sp"
+        ></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:layout_toRightOf="@+id/btnVolver"
+        android:id="@+id/btnSalir"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="185sp"
+        ></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAltura"
+        android:text="Altura(h)"
+        android:layout_below="@+id/btnVolver"
+        android:layout_marginTop="200sp"
+        android:layout_marginLeft="20sp"
+        android:height="30sp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBase"
+        android:text="Base(b)"
+        android:layout_below="@+id/txtAltura"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="20sp"
+        android:height="30sp"
+        ></TextView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputAltura"
+        android:layout_below="@id/btnVolver"
+        android:layout_toRightOf="@id/txtAltura"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="200sp"
+        android:width="200sp"
+        android:height="30sp"
+        ></EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputBase"
+        android:layout_below="@+id/inputAltura"
+        android:layout_toRightOf="@id/txtBase"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="50sp"
+        android:width="200sp"
+        android:height="30sp"
+        ></EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewResultado"
+        android:layout_below="@+id/btnVolver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500sp"
+        android:width="200sp"
+        ></EditText>
+
+</RelativeLayout>
