@@ -28,4 +28,18 @@
 
     <string name="retroceso"> </string>
     <string name="display">0</string>
+    <string name="volver">Volver</string>
+    <string name="salir">Salir</string>
+    <string name="altura_h">Altura(h)</string>
+    <string name="base_b">Base(b)</string>
+    <string name="multiapp">MultiApp</string>
+    <string name="rea_del_tri_ngulo">Área del Triángulo</string>
+    <string name="ecuaci_n_de_2_grado">Ecuación de 2º Grado</string>
+    <string name="calculadora">Calculadora</string>
+    <string name="resultado">resultado</string>
+    <string name="a">a</string>
+    <string name="b">b</string>
+    <string name="c">c</string>
+    <string name="altura">Altura</string>
+    <string name="base">Base</string>
 </resources>

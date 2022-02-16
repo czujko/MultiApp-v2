@@ -4,19 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#80cbc4"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MultiApp"
+        android:text="@string/multiapp"
         android:layout_centerHorizontal="true"
         android:layout_marginVertical="125dp"
         android:textSize="50sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:id="@+id/txtNombreApp"
-        ></TextView>
+        android:id="@+id/txtNombreApp"/>
+
 
     <Button
         android:layout_width="wrap_content"
@@ -24,10 +25,11 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/txtNombreApp"
         android:layout_marginTop="25dp"
-        android:text="Área del Triángulo"
+        android:text="@string/rea_del_tri_ngulo"
         android:id="@+id/btnTriangulo"
         android:onClick="onClick"
-        ></Button>
+        android:background="#4f9b94"
+        android:minWidth="200sp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -35,10 +37,11 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/btnTriangulo"
         android:layout_marginTop="15dp"
-        android:text="Ecuación de 2º Grado"
+        android:text="@string/ecuaci_n_de_2_grado"
         android:id="@+id/btnEcuacion"
         android:onClick="onClick"
-        ></Button>
+        android:background="#4f9b94"
+        android:minWidth="200sp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -46,9 +49,10 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/btnEcuacion"
         android:layout_marginTop="15dp"
-        android:text="Calculadora"
+        android:text="@string/calculadora"
         android:id="@+id/btnCalculadora"
         android:onClick="onClick"
-        ></Button>
+        android:background="#4f9b94"
+        android:minWidth="200sp"/>
 
 </RelativeLayout>

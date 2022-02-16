@@ -1,9 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#b2dfdb"
     tools:context=".Ecuacion">
 
-</android.support.constraint.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ecuacion" />
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volver"
+        android:layout_marginStart="20sp"
+        android:id="@+id/btnVolver"
+        android:layout_marginTop="20sp"
+        android:background="#4f9b94"
+        android:minWidth="125sp"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salir"
+        android:layout_toEndOf="@+id/btnVolver"
+        android:id="@+id/btnSalir"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="115sp"
+        android:background="#4f9b94"
+        android:minWidth="125sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtA"
+        android:text="@string/a"
+        android:layout_below="@+id/btnVolver"
+        android:layout_marginTop="300sp"
+        android:layout_marginStart="30sp"
+        android:height="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtB"
+        android:text="@string/b"
+        android:layout_below="@+id/txtA"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="30sp"
+        android:height="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtC"
+        android:text="@string/c"
+        android:layout_below="@+id/txtB"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="30sp"
+        android:height="30sp"/>
+
+    <EditText
+        android:id="@+id/inputA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnVolver"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="300sp"
+        android:layout_toEndOf="@id/txtA"
+        android:width="200sp"
+        android:height="30sp" />
+
+    <EditText
+        android:id="@+id/inputB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputA"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="30sp"
+        android:layout_toEndOf="@id/txtA"
+        android:width="200sp"
+        android:height="30sp" />
+
+    <EditText
+        android:id="@+id/inputC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputB"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="30sp"
+        android:layout_toEndOf="@id/txtA"
+        android:width="200sp"
+        android:height="30sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado"
+        android:layout_below="@+id/btnVolver"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="500sp"
+        android:id="@+id/btnResultado"
+        android:background="#4f9b94"
+        android:minWidth="125sp"/>
+
+    <EditText
+        android:id="@+id/viewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnVolver"
+        android:layout_toEndOf="@id/btnResultado"
+        android:layout_marginStart="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500sp"
+        android:width="125sp" />
+
+</RelativeLayout>
