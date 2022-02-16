@@ -1,13 +1,12 @@
-# Calculadora
-Programa __Calculadora__ desarrollado en Android Studio con las siguientes funciones:
->- Suma
->- Resta
->- Multiplicación
->- División
->- Potencia
->- Raíz cuadrada
->- Cálculo del área de un círculo
->- Cálculo longitud de una circunferencia
-## Sample
+# MultiApp
+Programa __MultiApp__ desarrollado en Android Studio con las siguientes funciones:
+>- Menú Principal
+>- Área del Triángulo
+>- Ecuación de 2º Grado
+>- Calculadora
+## Samples
+![](sampledata/02.png)
+
+![](sampledata/03.png)
 
 ![](sampledata/01.png)
