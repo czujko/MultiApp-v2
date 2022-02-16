@@ -75,7 +75,7 @@
         android:text="@string/resultado"
         android:layout_below="@+id/btnVolverDeTriangulo"
         android:layout_marginStart="20sp"
-        android:layout_marginTop="450sp"
+        android:layout_marginTop="430sp"
         android:id="@+id/btnResultado"
         android:background="#4f9b94"
         android:minWidth="125sp"
