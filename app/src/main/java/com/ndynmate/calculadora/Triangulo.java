@@ -1,5 +1,6 @@
 package com.ndynmate.calculadora;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,15 @@ public class Triangulo extends AppCompatActivity implements View.OnClickListener
         viewResultado = findViewById(R.id.viewResultado);
 
         viewResultado.setOnClickListener(this);
+
+        Button volver = findViewById(R.id.btnVolverDeTriangulo);
+        volver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(String.valueOf(MainActivity.class));
+                startActivity(intent);
+            }
+        });
     }
 
     public void onClick(View view) {

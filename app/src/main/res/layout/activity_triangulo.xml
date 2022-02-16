@@ -22,20 +22,21 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/btnVolver"
+        android:id="@+id/btnVolverDeTriangulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20sp"
         android:layout_marginTop="20sp"
         android:background="#4f9b94"
         android:minWidth="125sp"
-        android:text="@string/volver"/>
+        android:text="@string/volver"
+        android:onClick="onClick"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/salir"
-        android:layout_toEndOf="@+id/btnVolver"
+        android:layout_toEndOf="@+id/btnVolverDeTriangulo"
         android:id="@+id/btnSalir"
         android:layout_marginTop="20sp"
         android:layout_marginStart="115sp"
@@ -46,7 +47,7 @@
         android:id="@+id/txtAltura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnVolver"
+        android:layout_below="@+id/btnVolverDeTriangulo"
         android:layout_marginStart="30sp"
         android:layout_marginTop="300sp"
         android:height="50sp"
@@ -72,9 +73,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/resultado"
-        android:layout_below="@+id/btnVolver"
+        android:layout_below="@+id/btnVolverDeTriangulo"
         android:layout_marginStart="20sp"
-        android:layout_marginTop="500sp"
+        android:layout_marginTop="450sp"
         android:id="@+id/btnResultado"
         android:background="#4f9b94"
         android:minWidth="125sp"
@@ -84,10 +85,10 @@
         android:id="@+id/viewResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnVolver"
+        android:layout_below="@+id/btnVolverDeTriangulo"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="430dp"
         android:layout_toEndOf="@id/btnResultado"
         android:width="100sp"
         android:height="80sp"

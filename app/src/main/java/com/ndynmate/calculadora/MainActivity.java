@@ -31,5 +31,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button resultadoe = findViewById(R.id.btnEcuacion);
+        resultadoe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Ecuacion.class);
+                startActivity(intent);
+            }
+        });
     }
 }
